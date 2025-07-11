@@ -28,6 +28,10 @@ module RubyLLM
                   :azure_openai_api_base,
                   :azure_openai_api_version,
                   :azure_openai_api_key,
+                  # Azure AI Provider configuration
+                  :azure_ai_api_base,
+                  :azure_ai_api_version,
+                  :azure_ai_api_key,
                   # Default models
                   :default_model,
                   :default_embedding_model,

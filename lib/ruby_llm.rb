@@ -15,6 +15,7 @@ loader.inflector.inflect(
   'llm' => 'LLM',
   'openai' => 'OpenAI',
   'azure_openai' => 'AzureOpenAI',
+  'azure_ai' => 'AzureAI',
   'api' => 'API',
   'deepseek' => 'DeepSeek',
   'bedrock' => 'Bedrock',
@@ -85,6 +86,7 @@ RubyLLM::Provider.register :bedrock, RubyLLM::Providers::Bedrock
 RubyLLM::Provider.register :openrouter, RubyLLM::Providers::OpenRouter
 RubyLLM::Provider.register :ollama, RubyLLM::Providers::Ollama
 RubyLLM::Provider.register :azure_openai, RubyLLM::Providers::AzureOpenAI
+RubyLLM::Provider.register :azure_ai, RubyLLM::Providers::AzureAI
 
 if defined?(Rails::Railtie)
   require 'ruby_llm/railtie'
